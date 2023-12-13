@@ -1,0 +1,107 @@
+@font-face{ 
+    font-family: myfont1;
+    src: url(precious.zip);
+}
+@font-face {
+    font-family: myfont2;
+    src: url(janda-stylish-script.zip);
+}
+.head{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.body{
+    min-height: 10vh;
+    background: url("background.jpg") no-repeat;
+    background-size: cover;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px 2px;
+    background-color: rgb(127, 167, 201);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 94;
+}
+.logo{
+    font-family: myfont1;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a {
+    position: relative;
+    font-family: myfont2;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: 30px;
+}
+.navbar a::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: rgb(243, 246, 248);
+    transition: 0.3s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+.flex-container{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: flex-end;
+    background-color: transparent;
+    transition: 1s;
+
+}
+.flex-text{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: flex-start;
+    background-color: transparent;
+    justify-content: left;
+}
+.txt1{
+    color: aliceblue;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: myfont1;
+}
+.txt2{
+    color: aliceblue;
+    font-size: 70px;
+    margin-top: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.txt3{
+    color: aliceblue;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.flex-img{
+    margin-left: 100px;
+}
+.img{
+    height: 500px;
+    width: 450px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 8px rgb(47, 47, 87);
+
+}
+
